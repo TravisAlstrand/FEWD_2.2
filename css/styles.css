@@ -38,6 +38,11 @@ footer {
   padding: 1rem;
 }
 
+#skills p,
+.contact-p {
+  margin-bottom: 1rem;
+}
+
 /* BASIC STYLES */
 
 h1 {
@@ -61,6 +66,11 @@ h1 {
 a {
   text-decoration: none;
   cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+a:hover {
+  color: darkred;
 }
 
 li {
@@ -97,14 +107,6 @@ p {
   background-color: aliceblue;
 }
 
-#skills p {
-  margin-bottom: 1rem;
-}
-
-.contact-p {
-  margin-bottom: 1rem;
-}
-
 footer {
   display: flex;
   justify-content: space-between;
@@ -127,8 +129,24 @@ footer {
     font-size: 1.25rem;
   }
 
-  header {
+  p {
+    line-height: 1.5rem;
+  }
+
+  header,
+  .header-div-2,
+  ul,
+  .projects-div,
+  #skills,
+  .contact-container,
+  .footer-nav,
+  .footer-nav-ul {
     display: flex;
+  }
+
+  header,
+  #skills,
+  .contact-container {
     flex-direction: column;
     align-items: center;
   }
@@ -138,7 +156,6 @@ footer {
   }
 
   .header-div-2 {
-    display: flex;
     align-items: center;
   }
 
@@ -160,7 +177,6 @@ footer {
   }
 
   ul {
-    display: flex;
     justify-content: space-evenly;
   }
 
@@ -177,7 +193,6 @@ footer {
   }
 
   .projects-div {
-    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
@@ -186,20 +201,8 @@ footer {
     width: 48%;
   }
 
-  #skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   #skills p {
     width: 75%;
-  }
-
-  .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .contact-message {
@@ -211,14 +214,11 @@ footer {
   }
 
   .footer-nav {
-    display: flex;
     justify-content: flex-end;
     width: 50%;
   }
 
   .footer-nav-ul {
-    display: flex;
-    justify-content: space-evenly;
     width: 100%;
   }
 }
@@ -230,22 +230,28 @@ footer {
     padding: 2.5rem;
   }
 
-  .header-div-1 {
+  .header-div-1,
+  .header-nav,
+  .header-nav-ul {
     display: flex;
+  }
+
+  .header-div-1,
+  .header-nav-ul {
     justify-content: space-between;
+  }
+
+  .header-div-1 {
     align-items: center;
     width: 100%;
   }
 
   .header-nav {
-    display: flex;
     justify-content: flex-end;
     width: 30%;
   }
 
   .header-nav-ul {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
   }
 
