@@ -142,6 +142,13 @@ footer {
     align-items: center;
   }
 
+  .header-div-2 p {
+    padding-right: 1rem;
+    text-align: left;
+    align-self: flex-start;
+    margin-top: 2rem;
+  }
+
   .profile-img {
     order: 2;
     width: 40%;
@@ -213,5 +220,40 @@ footer {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  header,
+  section,
+  footer {
+    padding: 2.5rem;
+  }
+
+  .header-div-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+  }
+
+  .header-nav-ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header-div-2 p {
+    padding-right: 2rem;
+  }
+
+  .project {
+    width: 30%;
   }
 }
